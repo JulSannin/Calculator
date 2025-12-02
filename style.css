@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background: beige;
+    border-radius: 8px;
+}
+
+.display {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 232px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background: white;
+}
+
+.previous_value {
+    text-align: end;
+    width: 222px;
+    height: 20px;
+}
+
+.current_value {
+    display: block;
+    width: 232px;
+    height: 40px;
+    text-align: end;
+    border: 0;
+    border-radius: 8px;
+    font-size: 24px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(58px * 4);
+    height: calc(58px * 5);
+    margin-top: 10px;
+}
+
+.button:nth-child(2) {
+    width: 68px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+    margin: 4px;
+    background: gray;
+    border: solid 1px black;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: silver;
+    color: gray;
+}
+
+.button:active {
+    background: silver;
+    color: white;
+    border: solid 3px black;
+    padding: 2px;
+}
+
+.button_back-space {
+    flex: 2;
+}
+
+.button_back-space, .button_clear {
+    background: wheat;
+    color: gray;
+} 
+
+.button_back-space:hover, .button_clear:hover {
+    background: white;
+}
+
+.button_back-space:active, .button_clear:active {
+    background: silver;
+}
+
+.button_invisible {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.button_operator {
+    font-size: 28px;
+    background:silver;
+}
+
+.button_operator:hover {
+    background: white;
+}
+
+.button_operator:active {
+    color: silver;
+}
